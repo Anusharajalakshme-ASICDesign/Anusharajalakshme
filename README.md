@@ -26,5 +26,8 @@ Currently, I serve as a **Senior Staff Lead**, where I define the standards for 
 
 ### 📈 Philosophy
 I believe that **"Great Silicon starts with Rigorous RTL."** By bringing sign-off-level discipline (LEC/CDC) earlier into the design cycle, I help teams reduce re-spins and hit aggressive time-to-market targets.
+I have developed my skills in listening, task delegation, conflict management, relationship building, and collaboration during my journey with Infineon and Microchip.
+My future aspirations are rooted in a deep and continuous commitment to learning. I believe that true innovation and effective problem-solving stem from a curious mind that is always absorbing new information and embracing challenges.
+I've personally grown from a learner to a mentor, and my long-term aspiration is to become a leader who can inspire others in my firm and community. I strongly believe that strong individual contributors can evolve into great leaders.
 
 **Let's Connect:** [LinkedIn](linkedin.com/in/anusha-sree-ganesan-57077085/) | 📍 Austin, TX
