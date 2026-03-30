@@ -2,6 +2,20 @@
 *Post silicon involvement*
 
 <details>
+<summary><b>🔍 High-Stakes GLS Debug & ECO </b></summary>
+
+* **Situation:** During the final sign-off phase, SoC-level Gate-Level Simulation (GLS) failed for a critical IP, despite passing all functional RTL verification. The failure was traced to a contradiction between the RTL and the physical netlist regarding flop retention behavior.
+* **Task:** Identify the root cause of the behavior mismatch and implement an Emergency Change Order (ECO) to resolve the discrepancy without delaying the fast-approaching tape-out.
+* **Action:** I performed a deep-dive debug and discovered the issue originated in the **Unified Power Format (UPF)** list definitions, which the synthesis tool had failed to recognize. As the IP Design Lead, I took sole responsibility for the resolution:
+    * Proposed a strategic workaround to modify the register behavior, bypassing the synthesis limitation.
+    * Manually implemented the ECO across all levels of netlists to save critical implementation time.
+    * Guided for **Logical Equivalence Checking (LEC)** to ensure the fix was functionally perfect.
+* **Result:** Successfully synchronized the RTL, UPF, and Netlist behavior, allowing the SoC to meet its sign-off milestones on schedule. I subsequently updated the master RTL and UPF libraries to prevent recurrence in future product generations.
+* **Impact:** **Prevented a major tape-out delay** by taking technical ownership beyond my standard scope and received management recognition for rapid, high-pressure problem-solving.
+* **Takeaway:** Senior leadership is defined by the ability to remain calm under extreme tape-out pressure and provide optimal, "out-of-the-box" solutions. By going above and beyond my defined role to manage the ECO and LEC personally, I ensured the team overcame a critical crisis that could have resulted in a multi-week schedule slip.
+</details>
+
+<details>
 <summary><b>🛠️ Silicon Reliability & Burn-in Fix </b></summary>
 
 * **Situation:** Silicon failed reliability tests after three days of burn-in due to an unexpected MCU sleep mode during FW inactivity.
