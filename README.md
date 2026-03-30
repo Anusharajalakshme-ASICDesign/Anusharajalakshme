@@ -6,6 +6,11 @@ Master's qualified **Senior Staff SoC Design Engineer** with over a decade of in
 * 4+ years with Infineon (Austin, TX, USA) – November 2021 –present 
 * 5+ years with Microchip (Chennai, India) – July 2014 to January 2020.
 
+#### **Silicon Success stories**
+https://github.com/Anusharajalakshme-ASICDesign/Anusharajalakshme/blob/main/Cross_functional_collaboration.md
+https://github.com/Anusharajalakshme-ASICDesign/Anusharajalakshme/blob/main/Methodologies_Optimization.md
+https://github.com/Anusharajalakshme-ASICDesign/Anusharajalakshme/blob/main/Cross_functional_collaboration.md
+
 #### **The Foundation: RTL Design & IP Ownership**
 I began my journey mastering the fundamentals of **Verilog/SystemVerilog**, focusing on high-speed digital design and modular IP development. My early successes involved delivering timing-clean blocks and mastering the nuances of the ASIC design flow.
 
