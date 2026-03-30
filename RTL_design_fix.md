@@ -15,7 +15,7 @@
 <details>
 <summary><b>🔐 Secure Boot OTP Memory Optimization </b></summary>
 
-* **Situation:** The One-Time Programmable (OTP) hardware state machine was inefficiently re-reading entire protected security regions (containing public/private keys) every time firmware (FW) initiated operations after power-up, causing significant boot latency.
+* **Situation:** The One-Time Programmable (OTP) was inefficiently re-reading entire protected security regions (containing public/private keys) every time firmware (FW) initiated operations after power-up, causing significant boot latency.
 * **Task:** Implement a more efficient locking feature and hardware-read flow to enable secure boot while ensuring protected regions remained non-modifiable once locked.
 * **Action:** Orchestrated the hardware state machine to implement a status check at a specific memory location. This triggered a single-run read sequence to latch values locally before handing control to the software.
 * **Result:** Successfully eliminated redundant hardware reads, allowing the firmware to operate without hardware intervention for OTP memory operations post-boot.
