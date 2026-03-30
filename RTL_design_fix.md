@@ -15,19 +15,19 @@
 <details>
 <summary><b>🔐 Secure Boot OTP Memory Optimization </b></summary>
 
-* **Situation:** The One-Time Programmable (OTP) was inefficiently re-reading entire protected security regions (containing public/private keys) every time firmware (FW) initiated operations after power-up, causing significant boot latency.
-* **Task:** Implement a more efficient locking feature and hardware-read flow to enable secure boot while ensuring protected regions remained non-modifiable once locked.
+* **Situation:** The One-Time Programmable (OTP) was inefficiently re-reading entire regions every time firmware (FW) initiated operations after power-up, causing significant latency.
+* **Task:** Implement a more efficient hardware-read flow to ensure protected regions remained non-modifiable once locked.
 * **Action:** Orchestrated the hardware state machine to implement a status check at a specific memory location. This triggered a single-run read sequence to latch values locally before handing control to the software.
 * **Result:** Successfully eliminated redundant hardware reads, allowing the firmware to operate without hardware intervention for OTP memory operations post-boot.
-* **Impact:** **Streamlined the secure boot sequence** and enhanced system reliability by ensuring hardware-level protection of sensitive keys while reducing overall power-up latency.
-* **Takeaway:** Implementing hardware-level data update is a critical structural solution for optimizing the interaction between firmware and secure hardware resources.
+* **Impact:** **Streamlined the boot sequence** and enhanced system reliability by ensuring hardware-level protection of data while reducing overall power-up latency.
+* **Takeaway:** Implementing hardware-level control is a critical structural solution for optimizing the interaction between firmware and secure hardware resources.
 </details>
 
 <details>
 <summary><b>🚦 Multi-Master Bus Arbitration Priority Optimization </b></summary>
 
-* **Situation:** During high-concurrency multitasking, a collision occurred between two bus masters—the MIPS DS (Data Stream) and the AES master—while writing to the AES FIFO via DMA. 
-* **Task:** Resolve a bus matrix deadlock where the default fixed-priority arbitration gave higher precedence to the MIPS DS, effectively blocking critical DMA access during security operations.
+* **Situation:** During high-concurrency multitasking, a collision occurred between two bus masters while writing to a slave's FIFO via DMA. 
+* **Task:** Resolve a bus matrix deadlock where the default fixed-priority arbitration gave higher precedence to the master 1, effectively blocking critical DMA access to master 2.
 * **Action:** Designed and implemented a programmable arbitration register. This allowed the system to dynamically reconfigure priority levels, ensuring DMA access was prioritized after the initial security register configuration.
 * **Result:** Successfully identified and resolved the bottleneck during post-silicon validation, with the fix integrated into the final production silicon.
 * [cite_start]**Impact:** **Eliminated system-level deadlocks** during multi-tasking and provided architectural flexibility for firmware to tune bus performance based on real-time security workloads.
