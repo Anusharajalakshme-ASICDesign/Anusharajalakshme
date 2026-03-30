@@ -7,6 +7,8 @@ Master's qualified **Senior Staff SoC Design Engineer** with over a decade of in
 * 5+ years with Microchip (Chennai, India) – July 2014 to January 2020.
 
 #### **Silicon Success stories**
+These emphasizes end-to-end ownership from RTL to Tape-out.
+
 * https://github.com/Anusharajalakshme-ASICDesign/Anusharajalakshme/blob/main/RTL_design_fix.md
 * https://github.com/Anusharajalakshme-ASICDesign/Anusharajalakshme/blob/main/Methodologies_Optimization.md
 * https://github.com/Anusharajalakshme-ASICDesign/Anusharajalakshme/blob/main/Cross_functional_collaboration.md
